@@ -6,10 +6,8 @@ import {
   FormsModule,
   ReactiveFormsModule
 } from '@angular/forms';
-import {TranslateModule} from '@ngx-translate/core';
 import {
 OnScreenMessageComponent,
-MultiKeyTranslatePipe
 } from '../../framework';
 
 @NgModule({
@@ -17,18 +15,14 @@ MultiKeyTranslatePipe
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    TranslateModule,
   ],
   declarations: [
-    MultiKeyTranslatePipe,
     OnScreenMessageComponent
   ],
   exports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    TranslateModule,
-    MultiKeyTranslatePipe,
     OnScreenMessageComponent
   ],
   providers: [
